@@ -3,7 +3,7 @@ import login from "./e2e/utils/login";
 
 const username = process.env.ZENBRIDGE_USERNAME ?? "";
 const password = process.env.ZENBRIDGE_PASSWORD ?? "";
-
+console.log("use",username,password)
 async function globalSetup(config: FullConfig) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
